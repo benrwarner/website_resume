@@ -1,15 +1,16 @@
-const express = require('express');
-const cors = require('cors');
-require('dotenv').config();
+const express = require('express');     // Import Express
+const cors = require('cors');           // Import CORS
+require('dotenv').config();             // Load environment variables
 
-const app = express();
-const PORT = process.env.PORT || 5000;
+const app = express();                  // Create Express app
+const PORT = process.env.PORT || 5000;  // Set port from env or default to 5000
 
-app.use(cors());
-app.use(express.json());
+app.use(cors());                        // Enable CORS for all routes
+app.use(express.json());               // Parse JSON request bodies
 
+// Test API endpoint
 app.get('/api/hello', (req, res) => {
-  res.json({ message: 'Hello from Express!' });
+  res.json({ message: 'Hello from Express!' });  // Send a JSON response
 });
 
 app.listen(PORT, () => {
