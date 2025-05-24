@@ -1,0 +1,77 @@
+h1 {
+  color: white;
+  font-size: 60px;
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+.headerInfo{
+
+    justify-items: center;
+}
+
+.infoBox{
+    background-color: rgb(9, 9, 36);
+    width: 40vw;
+    justify-self: center;
+    height: 50vh;
+    border-radius: 10px;
+    box-shadow: 0 0 10px grey;
+    padding: 5px;
+    max-height: 600px;
+    max-width: 800px;
+    word-wrap: break-word;
+}
+.greet{
+    color: white;
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    margin:10px;
+    margin-left: 15px;
+
+}
+.sideBar{
+    color: white;
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color:white;
+    background-color: rgb(9, 9, 36);
+    margin-left: 30px;
+    width: 10vw;
+    height: 50vh;
+    border-radius: 10px;
+    box-shadow: 0 0 10px grey;
+    padding: 5px;
+    max-height: 600px;
+    justify-items: center;
+}
+.underHead{
+    display: inline-flex;
+    justify-items: center;
+}
+
+.conatinUnderHead{
+    justify-self: center;
+}
+.info{
+    color: white;
+    font-family: "Cal Sans", sans-serif;
+    
+    font-size: 18px;
+    margin:10px;
+    margin-left: 15px; 
+    text-indent: 20px;
+
+}
+.me{
+    width:7em;
+    
+}
+.links{
+
+}
+.links img{
+    width:2em;
+}

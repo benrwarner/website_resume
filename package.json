@@ -20,6 +20,10 @@
   "homepage": "https://github.com/benrwarner/website_resume#readme",
   "description": "",
   "devDependencies": {
+    "@types/react-router-dom": "^5.3.3",
     "concurrently": "^9.1.2"
+  },
+  "dependencies": {
+    "react-router-dom": "^7.6.0"
   }
 }

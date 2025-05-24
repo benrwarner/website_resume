@@ -1,7 +1,10 @@
 import { useEffect, useState } from 'react';
+import Home from './pages/Home';
+import { BrowserRouter as Router, Routes, Route, useRoutes } from "react-router-dom";
 
 function App() {
   const [msg, setMsg] = useState('');
+
 
   useEffect(() => {
     fetch('/api/hello')
@@ -10,10 +13,13 @@ function App() {
   }, []);
 
   return (
-    <div>
-      <h1>Vite + React + TS</h1>
-      <p>{msg}</p>
-    </div>
+   
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+      </Routes>
+    </Router>
+   
   );
 }
 
