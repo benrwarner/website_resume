@@ -13,9 +13,11 @@ function Home() {
           <div className="infoBox">
             <p className="greet">Hello,</p>
             <p className="info">
-              My name is Ben. I am a 3rd year Computer Science student at
+              My name is Ben Warner, I am a 3rd year Computer Science student at
               Ontario Tech University. Currently working as a Co-Op student at
               Ontario Power Generation, I have had a strong passion for anything
+              computers since elementary school. Strong in data analytics, Microsoft Power 
+              services, and 
             </p>
           </div>
           <div className="sideBar">

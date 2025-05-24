@@ -14,7 +14,7 @@ h1 {
     background-color: rgb(9, 9, 36);
     width: 40vw;
     justify-self: center;
-    height: 50vh;
+    height: auto;
     border-radius: 10px;
     box-shadow: 0 0 10px grey;
     padding: 5px;
@@ -69,9 +69,8 @@ h1 {
     width:7em;
     
 }
-.links{
 
-}
 .links img{
     width:2em;
+    margin:5px;
 }
