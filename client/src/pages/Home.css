@@ -4,6 +4,11 @@ h1 {
   font-family: "Silkscreen", sans-serif;
   font-weight: 200;
   font-style: normal;
+  margin: 30px;
+}
+
+.mainContainer{
+    justify-items: center;
 }
 .headerInfo{
     justify-items: center;
@@ -12,16 +17,36 @@ h1 {
     height:4.5em;
     border-radius: 8px;
     margin-left: 15px;
+    align-self: center;
     
 }
+h2{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.infoList{
+    list-style-type: none;
+    font-size: 15px;
+    margin:5px;
+    padding:0px;
+    justify-items: left;
+}
 .musicInfo{
-    margin-left: 20px;
+    margin-left: 30px;
     margin-right: 15px;
     align-content: center;
     justify-items: left;
 }
 .formatMusic{
     display: inline-flex;
+}
+.sound{
+    align-self: center;
+    height:2em;
+    padding:10px;
+
 }
 .music p{
     color: white;
@@ -31,18 +56,33 @@ h1 {
     font-weight: 200;
     font-style: normal;
 }
+.quickResume{
+    height: 800px;
+    width: 40vw;
+    background-color: rgb(9, 9, 36);
+    border-radius: 10px;
+    box-shadow: 0 0 7px grey;
+    justify-self: center;
+    margin-bottom: 100px;
+}
+.qListen{
+    justify-self: center;
+    margin-top:0px;
+    margin-bottom:5px;
+    color:white;
+    font-family: "Rubik", sans-serif;
+}
 .music{
     background-color: rgb(9, 9, 36);
     width: auto;
     justify-self: center;
-    height: 13vh;
+    height: auto;
     border-radius: 10px;
     box-shadow: 0 0 7px grey;
     padding: 10px;
     margin: 18px;
     display: flex;
-  
-    
+    flex-direction: column;
     align-items: center;
         
 }
@@ -65,7 +105,9 @@ h2{
 .greet{
     color: white;
     font-family: "Cal Sans", sans-serif;
-    font-weight: 400;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
     font-size: 30px;
     margin:10px;
     margin-left: 15px;
@@ -73,32 +115,46 @@ h2{
 }
 .sideBar{
     color: white;
-    font-family: "Cal Sans", sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    color:white;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    
     background-color: rgb(9, 9, 36);
     margin-left: 30px;
-    width: 10vw;
+    width: auto;
     height: 50vh;
     border-radius: 10px;
     box-shadow: 0 0 7px grey;
     padding: 5px;
     max-height: 600px;
     justify-items: center;
+    padding-left: 10px;
+}
+.infoList li{
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 .underHead{
     display: inline-flex;
     justify-items: center;
 }
-
+.pronoun{
+    color:grey;
+    font-size: 12px;
+    align-self: flex-end;
+    margin-left: 5px;
+    margin-bottom: 0px;
+}
 .conatinUnderHead{
     justify-self: center;
 }
 .info{
     color: white;
-    font-family: "Cal Sans", sans-serif;
-    
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
     font-size: 18px;
     margin:10px;
     margin-left: 15px; 

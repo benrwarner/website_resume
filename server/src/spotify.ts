@@ -40,7 +40,7 @@ const refreshAccessToken = async () => {
 
 export const getRecentTrack = async () => {
   try {
-    if (!accessToken || Date.now() - lastRefreshedAt > 30000) {
+    if (!accessToken || Date.now() - lastRefreshedAt > 300000) {
       console.log("🔄 Access token expired or missing. Refreshing...");
       await refreshAccessToken();
     }
