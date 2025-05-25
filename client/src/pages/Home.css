@@ -1,172 +1,210 @@
+/* stylelint-disable selector-class-pattern */
 h1 {
   color: white;
+  font-family: Silkscreen, sans-serif;
   font-size: 60px;
-  font-family: "Silkscreen", sans-serif;
-  font-weight: 200;
   font-style: normal;
+  font-weight: 200;
   margin: 30px;
 }
 
-.mainContainer{
-    justify-items: center;
-}
-.headerInfo{
-    justify-items: center;
-}
-.albumCover{
-    height:4.5em;
-    border-radius: 8px;
-    margin-left: 15px;
-    align-self: center;
-    
-}
-h2{
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-}
-.infoList{
-    list-style-type: none;
-    font-size: 15px;
-    margin:5px;
-    padding:0px;
-    justify-items: left;
-}
-.musicInfo{
-    margin-left: 30px;
-    margin-right: 15px;
-    align-content: center;
-    justify-items: left;
-}
-.formatMusic{
-    display: inline-flex;
-}
-.sound{
-    align-self: center;
-    height:2em;
-    padding:10px;
-
-}
-.music p{
-    color: white;
-    margin: 2px;
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
-}
-.quickResume{
-    height: 800px;
-    width: 40vw;
-    background-color: rgb(9, 9, 36);
-    border-radius: 10px;
-    box-shadow: 0 0 7px grey;
-    justify-self: center;
-    margin-bottom: 100px;
-}
-.qListen{
-    justify-self: center;
-    margin-top:0px;
-    margin-bottom:5px;
-    color:white;
-    font-family: "Rubik", sans-serif;
-}
-.music{
-    background-color: rgb(9, 9, 36);
-    width: auto;
-    justify-self: center;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 0 7px grey;
-    padding: 10px;
-    margin: 18px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-        
-}
-.infoBox{
-    color:white;
-    background-color: rgb(9, 9, 36);
-    width: 40vw;
-    justify-self: center;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 0 7px grey;
-    padding: 5px;
-    max-height: 600px;
-    max-width: 800px;
-    word-wrap: break-word;
-}
-h2{
-    color: white;
-}
-.greet{
-    color: white;
-    font-family: "Cal Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 30px;
-    margin:10px;
-    margin-left: 15px;
-
-}
-.sideBar{
-    color: white;
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
-    
-    background-color: rgb(9, 9, 36);
-    margin-left: 30px;
-    width: auto;
-    height: 50vh;
-    border-radius: 10px;
-    box-shadow: 0 0 7px grey;
-    padding: 5px;
-    max-height: 600px;
-    justify-items: center;
-    padding-left: 10px;
-}
-.infoList li{
-    padding-top: 2px;
-    padding-bottom: 2px;
-}
-.underHead{
-    display: inline-flex;
-    justify-items: center;
-}
-.pronoun{
-    color:grey;
-    font-size: 12px;
-    align-self: flex-end;
-    margin-left: 5px;
-    margin-bottom: 0px;
-}
-.conatinUnderHead{
-    justify-self: center;
-}
-.info{
-    color: white;
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
-    font-size: 18px;
-    margin:10px;
-    margin-left: 15px; 
-    text-indent: 20px;
-
-}
-.me{
-    width:7em;
-    
+.mainContainer {
+  justify-items: center;
 }
 
-.links img{
-    width:2em;
-    margin:5px;
+.headerInfo {
+  justify-items: center;
+}
+
+.albumCover {
+  align-self: center;
+  border-radius: 8px;
+  height: 4.5em;
+  margin-left: 15px;
+}
+
+h2 {
+  font-family: Rubik, sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.infoList {
+  font-size: 15px;
+  justify-items: left;
+  list-style-type: none;
+  margin: 5px;
+  padding: 0;
+}
+
+.musicInfo {
+  align-content: center;
+  justify-items: left;
+  margin-left: 30px;
+  margin-right: 15px;
+}
+
+.formatMusic {
+  display: inline-flex;
+}
+
+.sound {
+  align-self: center;
+  height: 2em;
+  padding: 10px;
+}
+
+.music p {
+  color: white;
+  font-family: Rubik, sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 200;
+  margin: 2px;
+}
+
+.quickResume {
+  background-color: rgb(9 9 36);
+  border-radius: 10px;
+  box-shadow: 0 0 7px grey;
+  height: 800px;
+  justify-self: center;
+  margin-bottom: 100px;
+  width: 40vw;
+  padding: 10px;
+  padding-left: 20px;
+  color: white;
+  font-family: Rubik, sans-serif;
+}
+
+.qListen {
+  color: white;
+  font-family: Rubik, sans-serif;
+  justify-self: center;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
+.music {
+  align-items: center;
+  background-color: rgb(9 9 36);
+  border-radius: 10px;
+  box-shadow: 0 0 7px grey;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-self: center;
+  margin: 18px;
+  padding: 10px;
+  width: auto;
+}
+
+.infoBox {
+  background-color: rgb(9 9 36);
+  border-radius: 10px;
+  box-shadow: 0 0 7px grey;
+  color: white;
+  height: auto;
+  justify-self: center;
+  max-height: 600px;
+  max-width: 800px;
+  padding: 5px;
+  width: 40vw;
+  word-wrap: break-word;
+}
+
+.greet {
+  color: white;
+  font-family: "Cal Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  margin: 10px;
+  margin-left: 15px;
+}
+
+.sideBar {
+  background-color: rgb(9 9 36);
+  border-radius: 10px;
+  box-shadow: 0 0 7px grey;
+  color: white;
+  font-family: Rubik, sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 200;
+  height: 50vh;
+  justify-items: center;
+  margin-left: 30px;
+  max-height: 600px;
+  padding: 5px;
+  padding-left: 10px;
+  width: auto;
+}
+
+.infoList li {
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
+
+.githubChart img {
+  height: auto;
+  width: 90%;
+}
+
+.githubChart {
+  padding-top: 15px;
+  text-align: center;
+}
+
+.underHead {
+  display: inline-flex;
+  justify-items: center;
+}
+
+.downloadRes {
+  color: white;
+  font-family: "Cal Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 27px;
+  font-weight: 700px;
+  margin-top: 40px;
+  text-decoration: none;
+}
+.downloadRes :hover {
+  color: grey;
+}
+
+.pronoun {
+  align-self: flex-end;
+  color: grey;
+  font-size: 12px;
+  margin-bottom: 0;
+  margin-left: 5px;
+}
+
+.conatinUnderHead {
+  justify-self: center;
+}
+
+.info {
+  color: white;
+  font-family: Rubik, sans-serif;
+  font-optical-sizing: auto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 100;
+  margin: 10px;
+  margin-left: 15px;
+  text-indent: 20px;
+}
+
+.me {
+  width: 7em;
+}
+
+.links img {
+  margin: 5px;
+  width: 2em;
 }

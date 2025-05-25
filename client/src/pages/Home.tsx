@@ -33,7 +33,7 @@ function Home() {
         <h1 data-aos="fade-up">Ben Warner</h1>
       </div>
       <div data-aos="fade-up" className="overview">
-        <h2>Overview</h2>
+        <h2 style={{ color: "white" }}>Overview</h2>
       </div>
       <div className="conatinUnderHead" data-aos="fade-up">
         <div className="underHead">
@@ -46,6 +46,12 @@ function Home() {
               computers since elementary school. Strong in data analytics,
               Microsoft Power services, and
             </p>
+            {/* <div className="githubChart">
+              <img
+                src="https://ghchart.rshah.org/007acc/benrwarner"
+                alt="GitHub chart"
+              />
+            </div> */}
           </div>
 
           <div className="sideBar" data-aos="fade-up">
@@ -68,11 +74,9 @@ function Home() {
             <div>
               <ul className="infoList">
                 <li>
-                  <div style={{display: "flex", marginBottom:"0px"}}>
-                    <p style={{marginBottom:"0px"}}>Name: Ben Warner</p>
-                    <p className="pronoun">
-                      he/him
-                    </p>
+                  <div style={{ display: "flex", marginBottom: "0px" }}>
+                    <p style={{ marginBottom: "0px" }}>Name: Ben Warner</p>
+                    <p className="pronoun">he/him</p>
                   </div>
                 </li>
 
@@ -115,6 +119,15 @@ function Home() {
             )}
           </div>
         </div>
+      </div>
+      <div data-aos="fade-up">
+        <a
+          className="downloadRes"
+          href="http://localhost:5000/BenjaminWarnerResume2025"
+          target="_blank"
+        >
+          <p>View Resume</p>
+        </a>
       </div>
 
       <div className="quickResume" data-aos="fade-up">
