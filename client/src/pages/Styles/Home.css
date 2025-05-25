@@ -143,6 +143,18 @@ h2 {
   margin: 15px;
   margin-left: 15px;
 }
+.infoList img{
+  height: 20px;
+  width: auto;
+  margin-right: 5px;
+  margin-bottom: 2px;
+}
+.infoList li{
+  display: flex;
+  align-items: center;     /* vertically center content */
+  justify-content: space-between; /* spread out left/right */
+  padding: 8px;
+}
 .sideBar {
   background-color: rgb(9 9 36);
   border-radius: 10px;
@@ -201,7 +213,7 @@ h2 {
   align-self: flex-end;
   color: grey;
   font-size: 12px;
-  margin-bottom: 0;
+  margin-bottom: 0px;
   margin-left: 5px;
 }
 

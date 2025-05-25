@@ -22,29 +22,29 @@ export default function Sidebar(){
         </div>
         <div>
           <ul className="infoList">
-            <li>
-              <div style={{ display: "flex", marginBottom: "0px" }}>
-                <p style={{ marginBottom: "0px" }}>
-                  <b>Name: </b>Ben Warner
+            <li style={{ display: "flex", margin:'0px'}}>
+                <img src="/src/assets/person.png" />
+                <p style={{ margin: "0"}}>
+                  Ben Warner
+                <span className="pronoun" style={{alignSelf: "flex-end"}}>he/him</span>
                 </p>
-                <p className="pronoun">he/him</p>
-              </div>
             </li>
 
             <li>
-              <b>Age:</b> 20
+              <img src="/src/assets/calendar.png" /> 20
             </li>
             <li>
-              <b>Location: </b>Toronto, ON
+              <img src="/src/assets/location.png" />
+              Toronto, ON
             </li>
             <li>
-              <b>School:</b> Ontario Tech U
+              <img src="/src/assets/school.png" /> Ontario Tech U
             </li>
             <li>
-              <b>Status:</b> Co-Op at OPG
+              <img src="/src/assets/work.png" /> Co-Op at OPG
             </li>
             <li>
-              <b>Contact:</b>{" "}
+              <img src="/src/assets/mail.png" />{" "}
               <a href="mailto:benrwarner1@gmail.com">benrwarner1@gmail.com</a>
             </li>
           </ul>
