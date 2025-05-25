@@ -133,7 +133,16 @@ h2 {
   margin: 10px;
   margin-left: 15px;
 }
-
+.qSkills{
+    color: white;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 200;
+  margin: 15px;
+  margin-left: 15px;
+}
 .sideBar {
   background-color: rgb(9 9 36);
   border-radius: 10px;
@@ -143,13 +152,15 @@ h2 {
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: 200;
-  height: 50vh;
+  height: auto;
   justify-items: center;
   margin-left: 30px;
   max-height: 600px;
   padding: 5px;
   padding-left: 10px;
+  padding-bottom: 10px;
   width: auto;
+  position: sticky;
 }
 
 .infoList li {
@@ -168,7 +179,8 @@ h2 {
 }
 
 .underHead {
-  display: inline-flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
   justify-items: center;
 }
 

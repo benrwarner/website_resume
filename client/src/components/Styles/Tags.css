@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 15px;
+  margin-left: 20px;
+}
+.tag {
+  color: white;
+  font-family:'Trebuchet MS',sans-serif;
+font-weight:bold;
+  font-size: 20px;
+  font-style: normal;
+  background-color: #525252;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: "default";
+}
