@@ -37,7 +37,16 @@ h2 {
   margin: 5px;
   padding: 0;
 }
-
+.infoList a {
+  color: white;
+  text-decoration: none;
+  font-style: italic;
+}
+.infoList a:hover {
+  color: white;
+  text-decoration: none;
+  color: rgb(151, 151, 151);
+}
 .musicInfo {
   align-content: center;
   justify-items: left;

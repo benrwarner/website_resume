@@ -1,15 +1,10 @@
-import React from "react";
-import { data, useNavigate } from "react-router-dom";
 import "./Home.css";
-import { useEffect, useState } from "react";
-import Lottie from "lottie-react";
-import animationData from "./music.json";
+import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { color } from "framer-motion";
+import DisplaySpotify from "../components/DisplaySpotify";
 
 function Home() {
-  const [track, setTrack] = useState<any>(null); // Holds Spotify track
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -17,14 +12,6 @@ function Home() {
       mirror: true,
       offset: 100,
     });
-  }, []);
-  useEffect(() => {
-    fetch("http://localhost:5000/api/spotify")
-      .then((res) => res.json())
-      .then((data) => {
-        setTrack(data.track);
-        console.log("Now Playing:", data.track.name);
-      });
   }, []);
 
   return (
@@ -75,15 +62,31 @@ function Home() {
               <ul className="infoList">
                 <li>
                   <div style={{ display: "flex", marginBottom: "0px" }}>
-                    <p style={{ marginBottom: "0px" }}>Name: Ben Warner</p>
+                    <p style={{ marginBottom: "0px" }}>
+                      <b>Name: </b>Ben Warner
+                    </p>
                     <p className="pronoun">he/him</p>
                   </div>
                 </li>
 
-                <li>Age: 20</li>
-                <li>Location: Toronto, ON</li>
-                <li>School: Ontario Tech U</li>
-                <li>Currently At: OPG</li>
+                <li>
+                  <b>Age:</b> 20
+                </li>
+                <li>
+                  <b>Location: </b>Toronto, ON
+                </li>
+                <li>
+                  <b>School:</b> Ontario Tech U
+                </li>
+                <li>
+                  <b>Status:</b> Co-Op at OPG
+                </li>
+                <li>
+                  <b>Contact:</b>{" "}
+                  <a href="mailto:benrwarner1@gmail.com">
+                    benrwarner1@gmail.com
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -94,30 +97,7 @@ function Home() {
           <h3>What I'm Listening To</h3>
         </div>
         <div className="music">
-          <div>
-            {track ? (
-              <div className="formatMusic">
-                <Lottie
-                  animationData={animationData}
-                  loop={true}
-                  className="sound"
-                />
-                <img
-                  src={track.album.images[0].url}
-                  alt="Album Cover"
-                  className="albumCover"
-                />
-                <div className="musicInfo">
-                  <p>
-                    <strong>{track.name}</strong>
-                  </p>
-                  <p>by {track.artists.map((a: any) => a.name).join(", ")}</p>
-                </div>
-              </div>
-            ) : (
-              <p>Loading...</p>
-            )}
-          </div>
+          <DisplaySpotify></DisplaySpotify>
         </div>
       </div>
       <div data-aos="fade-up">
