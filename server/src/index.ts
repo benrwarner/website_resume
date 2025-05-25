@@ -1,16 +1,23 @@
-import express from 'express';
-import cors from 'cors';
+import express from "express";
+import cors from "cors";
+import dotenv from "dotenv";
+import { getRecentTrack } from "./spotify";
 
+dotenv.config();
 const app = express();
-const PORT = process.env.PORT || 5000;
-
 app.use(cors());
-app.use(express.json());
 
-app.get('/api/hello', (req, res) => {
-  res.json({ message: 'Hello from Express + TypeScript!' });
+app.get("/api/spotify", async (req, res) => {
+  try {
+    const track = await getRecentTrack();
+    res.json(track);
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({ error: "Failed to fetch track" });
+  }
 });
 
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });

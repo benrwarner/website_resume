@@ -6,21 +6,61 @@ h1 {
   font-style: normal;
 }
 .headerInfo{
-
     justify-items: center;
 }
-
+.albumCover{
+    height:4.5em;
+    border-radius: 8px;
+    margin-left: 15px;
+    
+}
+.musicInfo{
+    margin-left: 20px;
+    margin-right: 15px;
+    align-content: center;
+    justify-items: left;
+}
+.formatMusic{
+    display: inline-flex;
+}
+.music p{
+    color: white;
+    margin: 2px;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+.music{
+    background-color: rgb(9, 9, 36);
+    width: auto;
+    justify-self: center;
+    height: 13vh;
+    border-radius: 10px;
+    box-shadow: 0 0 7px grey;
+    padding: 10px;
+    margin: 18px;
+    display: flex;
+  
+    
+    align-items: center;
+        
+}
 .infoBox{
+    color:white;
     background-color: rgb(9, 9, 36);
     width: 40vw;
     justify-self: center;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 0 10px grey;
+    box-shadow: 0 0 7px grey;
     padding: 5px;
     max-height: 600px;
     max-width: 800px;
     word-wrap: break-word;
+}
+h2{
+    color: white;
 }
 .greet{
     color: white;
@@ -42,7 +82,7 @@ h1 {
     width: 10vw;
     height: 50vh;
     border-radius: 10px;
-    box-shadow: 0 0 10px grey;
+    box-shadow: 0 0 7px grey;
     padding: 5px;
     max-height: 600px;
     justify-items: center;
